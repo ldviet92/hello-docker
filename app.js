@@ -5,7 +5,7 @@ var router = express.Router();
 var path = __dirname + '/views/';
 
 // Constants
-const PORT = 80;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 
 router.use(function (req,res,next) {
@@ -25,5 +25,5 @@ app.use(express.static(path));
 app.use("/", router);
 
 app.listen(PORT, function () {
-  console.log('Example app listening on port 80!')
+  console.log('Example app listening on port ',PORT)
 })
