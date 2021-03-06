@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  hellodocker:
+    image: ldviet92/hello-docker
+    environment:
+    - NODE_ENV=PROD
+    networks:
+      - root_app-tier
+networks:
+  root_app-tier:
+    external: true
