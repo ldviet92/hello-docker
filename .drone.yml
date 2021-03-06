@@ -10,7 +10,7 @@ steps:
   - name: docker_sock
     path: /var/run/docker.sock
   commands:
-  - docker build -f Dockerfile .
+  - docker build -t ldviet92/hello-docker -f Dockerfile .
 
 - name: deploy
   image: docker/compose:latest
