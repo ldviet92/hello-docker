@@ -5,8 +5,4 @@ services:
     image: ldviet92/hello-docker
     environment:
     - NODE_ENV=PROD
-    networks:
-      - root_app-tier
-networks:
-  root_app-tier:
-    external: true
+    
