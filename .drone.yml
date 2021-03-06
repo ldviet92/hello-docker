@@ -12,15 +12,6 @@ steps:
   commands:
   - docker build -t ldviet92/hello-docker -f Dockerfile .
 
-- name: deploy
-  image: docker/compose:latest
-  volumes:
-  - name: docker_sock
-    path: /var/run/docker.sock
-  commands:
-  - docker-compose up -d
-  - docker build -t nodejs .
-
 volumes:
   - name: docker_sock
     host:
